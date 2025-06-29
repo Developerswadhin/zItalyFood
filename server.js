@@ -107,17 +107,26 @@ app.post("/marrageChecker", (req, res) => {
   //marriage Conditions
   if (gender == "female") {
     if (years >= 18) {
-      return res
-        .status(200)
-        .send(`Dear ${name}, Congratulations you are of marriageable age`);
+      return res.status(200)
+        .send(`<div style="width:1200px;height:400px; text-align:center;">
+        <img style="width:400px;height:400px;border-radius: 50%; margin:10px 20px" src="https://media.tenor.com/FZ-4CQN3ywsAAAAi/laughing-lol.giff" />
+        </br>
+        <h1 style="font-size:40px; margin-top:50px; color:green;">Dear ${name},  Congratulations you are of marriageable age</h1>
+          
+        </div>
+          `);
     } else {
-      return res
-        .status(200)
-        .send(
-          `Dear ${name}, Sorry you are Not marriageable age You Need to Wait ${
-            18 - years
-          } years  ${12 - months} Months`
-        );
+      return res.status(200).send(
+        `<div style="width:1200px;height:400px; text-align:center;">
+        <img style="width:400px;height:400px;border-radius: 50%; margin:10px 20px" src="https://media.tenor.com/z6p1dxC8ItMAAAAi/sad-face-emotional.gif" />
+        </br>
+        <h1 style="font-size:40px; margin-top:50px; color:red;">Dear ${name}, Sorry you are Not marriageable age You Need to Wait ${
+          18 - years
+        } years  ${12 - months} Months</h1>
+          
+        </div>
+          `
+      );
     }
   } else {
     if (years >= 21) {
