@@ -33,3 +33,23 @@ export const homeData2 = [
     img: "images/14.jpg",
   },
 ];
+
+export const DataForSlider = [
+  {
+    title: "Authentic Italian Experience",
+    desc: "Enjoy the taste of Italy with handcrafted dishes made from traditional recipes and fresh ingredients.",
+    img: "images/banner1.jpg",
+  },
+  {
+    title: "Cozy Ambience",
+    desc: "Relax in our warm and welcoming space, perfect for romantic dinners, family meals, or friendly gatherings.",
+    img: "images/banner2.jpg",
+  },
+  {
+    title: "Farm-to-Table Ingredients",
+    desc: "We source our ingredients locally to ensure every bite is fresh, flavorful, and sustainable.",
+    img: "images/banner3.jpg",
+  },
+];
+
+export const bannerData = [];
