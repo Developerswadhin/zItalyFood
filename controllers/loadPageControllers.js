@@ -1,7 +1,11 @@
 import express from "express";
+import { homeData1, homeData2 } from "../data/home.js";
 
 export const loadHomePage = (req, res) => {
-  res.render("home");
+  res.render("home", {
+    homeData1,
+    homeData2,
+  });
 };
 export const loadStaffPage = (req, res) => {
   res.render("staff");
