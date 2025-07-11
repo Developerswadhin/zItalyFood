@@ -2,6 +2,7 @@ import express from "express";
 import { homeData1, homeData2, DataForSlider } from "../data/home.js";
 import { chefs } from "../data/staff.js";
 import { menuItems } from "../data/menu.js";
+import { contentData } from "../data/news.js";
 
 export const loadHomePage = (req, res) => {
   res.render("home", {
@@ -30,7 +31,9 @@ export const loadgalleryPage = (req, res) => {
   res.render("gallery");
 };
 export const loadNewsPage = (req, res) => {
-  res.render("news");
+  res.render("news", {
+    contentData,
+  });
 };
 export const loadArchivePage = (req, res) => {
   res.render("archive");
