@@ -3,6 +3,14 @@ import { homeData1, homeData2, DataForSlider } from "../data/home.js";
 import { chefs } from "../data/staff.js";
 import { menuItems } from "../data/menu.js";
 import { contentData } from "../data/news.js";
+import { galleryData } from "../data/gallery.js";
+
+import {
+  address,
+  hoursOfOperation,
+  contactInfo,
+  mapEmbedUrl,
+} from "../data/location.js";
 
 export const loadHomePage = (req, res) => {
   res.render("home", {
@@ -25,10 +33,17 @@ export const loadReservationPage = (req, res) => {
   res.render("reservation");
 };
 export const loadLocationPage = (req, res) => {
-  res.render("location");
+  res.render("location", {
+    address,
+    hoursOfOperation,
+    contactInfo,
+    mapEmbedUrl,
+  });
 };
 export const loadgalleryPage = (req, res) => {
-  res.render("gallery");
+  res.render("gallery", {
+    galleryData,
+  });
 };
 export const loadNewsPage = (req, res) => {
   res.render("news", {
