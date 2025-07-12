@@ -27,18 +27,18 @@ export const contentData = [
     posts: [
       {
         img: "images/10.jpg",
-        title: "Vero eros et accumsan et iusto odio",
-        link: "#",
+        title: "Vero eros et ",
+        price: "$25-$26",
       },
       {
         img: "images/7.jpg",
-        title: "Vero eros et accumsan et iusto odio",
-        link: "#",
+        title: "accumsan et iusto ",
+        price: "$25-$26",
       },
       {
         img: "images/8.jpg",
-        title: "Vero eros et accumsan et iusto odio",
-        link: "#",
+        title: "accumsan et iusto odio",
+        price: "$25-$26",
       },
     ],
   },
@@ -74,7 +74,7 @@ export const contentData = [
     ],
   },
   {
-    type: "tags",
+    type: "Tags",
     tags: [
       "animals",
       "cooking",
@@ -87,7 +87,7 @@ export const contentData = [
     ],
   },
   {
-    type: "gallery",
+    type: "Gallery",
     imgs: [
       "images/11.jpg",
       "images/10.jpg",
